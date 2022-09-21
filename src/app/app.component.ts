@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'First';
+  chnageColor = 'red'
+  constructor() {}
+  Msg(){
+    console.log(this.chnageColor)
+    alert("wnk ya  bro")
+  }
 }
