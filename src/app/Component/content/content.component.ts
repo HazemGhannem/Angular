@@ -22,7 +22,7 @@ export class ContentComponent implements OnInit {
   User= [
   {
   idCustomer: 1,
-  firstName: "Mila",
+  firstName: "Milaa",
   lastName: " Kunis",
   birthDate: "1999-06-30",
   accountCategory: "Admin",
