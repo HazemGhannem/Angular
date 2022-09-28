@@ -113,7 +113,7 @@
                         </thead>
                         <tbody>
                             
-                            <tr *ngFor="let user of User | filter:searchText">
+                            <tr *ngFor="let user of User | filter:searchText" >
                                 <th scope="row" class="ps-4" >
                                     <div class="form-check font-size-16"><input type="checkbox" class="form-check-input" id="contacusercheck1" /><label class="form-check-label" for="contacusercheck1"></label></div>
                                 </th>
@@ -125,8 +125,11 @@
                                     <ul class="list-inline mb-0">
                                         <div *ngIf="user.accountCategory !=='Admin' ">
                                         <li class="list-inline-item">
-                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary"><i class="bx bx-pencil font-size-18"></i></a>
+                                            <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" class="px-2 text-primary" (click)="show(user.idCustomer)"><i class="bx bx-pencil font-size-18"></i></a>
                                         </li>
+                                        <div class="div" *ngIf="user.idCustomer==j">
+                                        {{dodo.email}}
+                                    </div>
                                         <li class="list-inline-item">
                                             <div *ngIf="user.accountCategory !=='Admin' ">
                                                 <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete" class="px-2 text-danger" (click) ="DeleteUser(user.idCustomer)"><i class="bx bx-trash-alt font-size-18"></i></a>

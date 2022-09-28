@@ -6,9 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
+  dodo:any
   color:String = "green"
+  j:any=0
   DeleteUser (id:any ){
     this.User.splice(id-1,1)
+  }
+
+  show (id:any){
+    this.j=id
+   this.dodo= this.User[id]
   }
 
   searchText:any;
