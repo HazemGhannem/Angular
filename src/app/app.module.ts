@@ -7,6 +7,9 @@ import { NavComponent } from './Component/nav/nav.component';
 import { ContentComponent } from './Component/content/content.component';
 import { FooterComponent } from './Component/footer/footer.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FourniseurComponent } from './Component/fourniseur/fourniseur.component';
+import { ListFourniseurComponent } from './Component/list-fourniseur/list-fourniseur.component';
+
 
 
 
@@ -16,7 +19,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     NavComponent,
     ContentComponent,
     FooterComponent,
-    
+    FourniseurComponent,
+    ListFourniseurComponent,
+
   ],
   imports: [
     BrowserModule,

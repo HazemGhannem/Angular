@@ -1,0 +1,9 @@
+<p>fourniseur works!</p>
+<div [hidden]="hide">
+    <ul [ngClass]="'border border-danger'">
+        <li>{{idFournisseur}}</li>
+        <li>{{code}}</li>
+        <li>{{libelle}}</li>
+    </ul>
+</div>
+<button (click)="Change()">Cacher</button>

@@ -1,0 +1,16 @@
+<p>list-fourniseur works!</p>
+
+
+<div class="rr" *ngFor="let four of listForn">
+    <div *ngIf="four.idFournisseur<=100">
+        <fieldset>
+        <div [ngStyle]="four.libelle=='hp'?{'background-color':'green'}:{'background-color':'yellow'}">
+        <div class="cros"> idFournisseur: {{ four.idFournisseur}}</div>
+        code: {{ four.code}} <br>
+        libelle: {{ four.libelle}} 
+        </div>
+        </fieldset>
+    </div>     
+    
+</div>
+

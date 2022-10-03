@@ -11,6 +11,6 @@ export class AppComponent {
   constructor() {}
   Msg(){
     console.log(this.chnageColor)
-    alert("wnk ya  bro")
+    alert("alert")
   }
 }
