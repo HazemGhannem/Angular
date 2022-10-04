@@ -1,0 +1,38 @@
+<p>list-product works!</p>
+
+<h1>add product</h1>
+<form class="tt">
+    <label for="idProduit">idProduit:</label><br>
+    <input type="text" id="idProduit" name="idProduit" [(ngModel)]="id"><br>
+    <label for="code"> code:</label><br>
+    <input type="text" id="code" name="code" [(ngModel)]="code"><br><br>
+    <label for="libelle"> libelle:</label><br>
+    <input type="text" id="libelle" name="libelle" [(ngModel)]="libelle"><br><br>
+    <label for="prixUnitaire"> prixUnitaire:</label><br>
+    <input type="text" id="prixUnitaire" name="prixUnitaire" [(ngModel)]="prixUnitaire"><br><br>
+    <label for="tauxTVA"> tauxTVA:</label><br>
+    <input type="text" id="tauxTVA" name="tauxTVA" [(ngModel)]="tauxTVA"><br><br>
+    <input type="submit" value="ajout" (click)="add()" (click)="reset()">
+  </form> 
+
+<br>
+code:<input value="" class="space" [(ngModel)]="data">
+<div class="bord" *ngFor="let product of listproduct |filter:data  let i = index " >
+    <div >
+    <ol>
+        libelle: {{product.libelle}}
+        <button [disabled]="(product.tauxTVA === (0.02))"  (click)="Modif(product.idProduit)" >Ajout TVA</button>
+        <div *ngIf=" con === i">
+        {{msg}}
+        </div>
+        
+    </ol> 
+    <ul class="circle">
+        <li  [ngStyle]="product.prixUnitaire <= 50 ?{'background-color' :'blue','font-style':'italic','font-size': '20px'}:{}">idFournisseur: {{product.idProduit}}</li>
+        <li>code: {{product.code}}</li>
+        <li>prixUnitaire:{{product.prixUnitaire}}</li>
+        <li>tauxTVA: {{product.tauxTVA}}</li>
+    </ul>
+    </div>
+</div>
+

@@ -9,6 +9,7 @@ import { FooterComponent } from './Component/footer/footer.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FourniseurComponent } from './Component/fourniseur/fourniseur.component';
 import { ListFourniseurComponent } from './Component/list-fourniseur/list-fourniseur.component';
+import { ListProductComponent } from './Component/list-product/list-product.component';
 
 
 
@@ -21,6 +22,7 @@ import { ListFourniseurComponent } from './Component/list-fourniseur/list-fourni
     FooterComponent,
     FourniseurComponent,
     ListFourniseurComponent,
+    ListProductComponent,
 
   ],
   imports: [

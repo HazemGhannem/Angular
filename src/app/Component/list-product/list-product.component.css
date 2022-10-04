@@ -1,0 +1,18 @@
+.bord{
+    border: 1px solid black;
+    margin-bottom: 30px;
+    margin-right: 1100px;
+    margin-left: 10px;
+    padding-right: 30px;
+}
+.circle{
+    list-style-type:circle;
+}
+.space{
+    margin-bottom: 30px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.tt{
+    margin-left: 70px;
+}
